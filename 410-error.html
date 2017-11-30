@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="504 Gateway Timeout">
+        <meta name="author" content="">
+        <title>Page is Gone</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <style>
+            /* Error Page Inline Styles */
+
+            body {
+                padding-top: 20px;
+            }
+
+            /* Layout */
+
+            .jumbotron {
+                font-size: 21px;
+                font-weight: 200;
+                line-height: 2.1428571435;
+                color: inherit;
+                padding: 10px 0px;
+            }
+
+            /* Everything but the jumbotron gets side spacing for mobile-first views */
+
+            .masthead,
+            .body-content,
+                {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* Main marketing message and sign up button */
+
+            .jumbotron {
+                text-align: center;
+                background-color: transparent;
+            }
+
+            .jumbotron .btn {
+                font-size: 21px;
+                padding: 14px 24px;
+            }
+
+            /* Colors */
+
+            .green {
+                color: #5cb85c;
+            }
+
+            .orange {
+                color: #f0ad4e;
+            }
+
+            .red {
+                color: #d9534f;
+            }
+            .blue {
+                color: deepskyblue;
+            }
+        </style>
+        <script type="text/javascript">
+            function loadDomain() {
+                var display = document.getElementById("display-domain");
+                display.innerHTML = document.domain;
+            }
+        </script>
+    </head>
+
+    <body onload="javascript:loadDomain();">
+        <!-- Error Page Content -->
+        <div class="container">
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <br>
+                <h1>
+                    <i class="fa fa-space-shuttle  blue" aria-hidden="true"></i> This is gone</h1>
+                <br>
+                <h3 class="lead1">The resource requested is no longer available and will not be available again.
+                    <em>
+                        <span id="display-domain"></span>
+                    </em>
+                </h3>
+                <br>
+                <a href="javascript:document.location.reload(true);" class="btn btn-default btn-lg text-center">
+                    <span class="text-success">Try Reloading</span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="body-content">
+
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>What happened?</h2>
+                        <p class="lead">An This
+                            <strong> 410 error</strong> status This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410
+                            status code, the client should not request the resource in the future. Clients such as search engines should remove the resource
+                            from their indices. Most use cases do not require clients and search engines to purge the resource, and a "404 Not Found"
+                            may be used instead.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>What can I do?</h2>
+                        <p class="lead">If you're a site vistor</p>
+                        <p>
+                            <a onclick=javascript:checkSite();>Check to see if this website down for everyone or just you.</a>
+                            <script type="text/javascript">
+                                function checkSite() {
+                                    var currentSite = window.location.hostname;
+                                    window.location = "https://isup.me/" + currentSite;
+                                }
+                            </script>
+                        </p>
+                        <p>Also, clearing your browser cache and refreshing the page may clear this issue. If the problem persissts
+                            and you need immediate assistance, please send us an email instead.</p>
+                        <p class="lead">If you're the site owner</p>
+                        <p>Clearing your browser cache and refreshing the page may clear this issue. If the problem persissts
+                            and you need immediate assistance, please contact your website provider.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Error Page Content -->
+        <!--Scripts-->
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
