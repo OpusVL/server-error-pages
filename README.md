@@ -3,7 +3,7 @@ Server-Error-Pages
 
 Easy to use, professional error pages to replace the plaintext error pages that come with any server software like Nginx or Apache.
 
-### [Go to the Demo Site](http://alexphelps.github.io/server-error-pages/)
+### [Go to the Demo Site](http://opusvl.github.io/server-error-pages/)
 
 **Quick Details**
 * Unbranded and generic informational text for the user
@@ -18,11 +18,17 @@ Easy to use, professional error pages to replace the plaintext error pages that 
 * Isup.me integration on network error pages (502 & 504) for the user to check if the error is just for them
 
 **Error Pages Included**
+* 401
+* 402
 * 403
 * 404 
+* 409 
+* 410 
 * 500
+* 501
 * 502
 * 503
 * 504
 * Maintenance
 * Rate Limit
+* Site Unconfigured
